@@ -8,6 +8,6 @@
   <body id="page-top">
     <h1>Welcome <%= Helpers.current_user(session).username %></h1>
     <h3>Your Balance: <%= Helpers.current_user(session).balance %></h3>
-    <p> <input type="submit" value="Log Out")> </p>
+    <p> <input type="submit" action="/logout" value="Log Out")> </p>
   </body>
 </html>
