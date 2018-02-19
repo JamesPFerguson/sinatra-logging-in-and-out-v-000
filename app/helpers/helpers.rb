@@ -1,7 +1,7 @@
 class Helpers
 
   def self.current_user
-    @user = User.find_by(email: params["email"], password: params["password"])
+    @user = User.find_by_id(session[:id])
   end
 
   def self.is_logged_in?
